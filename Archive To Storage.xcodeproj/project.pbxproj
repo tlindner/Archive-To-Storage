@@ -13,6 +13,8 @@
 		22B7CE8019B0DD1C0063BAC2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 22B7CE7E19B0DD1C0063BAC2 /* Credits.rtf */; };
 		22B7CE8319B0DD1C0063BAC2 /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B7CE8219B0DD1C0063BAC2 /* TLAppDelegate.m */; };
 		22B7CE8619B0DD1C0063BAC2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B7CE8419B0DD1C0063BAC2 /* MainMenu.xib */; };
+		22B7CE8F19B0DD560063BAC2 /* DoWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B7CE8D19B0DD560063BAC2 /* DoWork.m */; };
+		22B7CE9019B0DD560063BAC2 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 22B7CE8E19B0DD560063BAC2 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		22B7CE8119B0DD1C0063BAC2 /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
 		22B7CE8219B0DD1C0063BAC2 /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
 		22B7CE8519B0DD1C0063BAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		22B7CE8C19B0DD560063BAC2 /* DoWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoWork.h; sourceTree = "<group>"; };
+		22B7CE8D19B0DD560063BAC2 /* DoWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoWork.m; sourceTree = "<group>"; };
+		22B7CE8E19B0DD560063BAC2 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,9 @@
 			children = (
 				22B7CE8119B0DD1C0063BAC2 /* TLAppDelegate.h */,
 				22B7CE8219B0DD1C0063BAC2 /* TLAppDelegate.m */,
+				22B7CE8C19B0DD560063BAC2 /* DoWork.h */,
+				22B7CE8D19B0DD560063BAC2 /* DoWork.m */,
+				22B7CE8E19B0DD560063BAC2 /* README */,
 				22B7CE8419B0DD1C0063BAC2 /* MainMenu.xib */,
 				22B7CE7619B0DD1C0063BAC2 /* Supporting Files */,
 			);
@@ -157,6 +165,7 @@
 				22B7CE7A19B0DD1C0063BAC2 /* InfoPlist.strings in Resources */,
 				22B7CE8019B0DD1C0063BAC2 /* Credits.rtf in Resources */,
 				22B7CE8619B0DD1C0063BAC2 /* MainMenu.xib in Resources */,
+				22B7CE9019B0DD560063BAC2 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +178,7 @@
 			files = (
 				22B7CE7C19B0DD1C0063BAC2 /* main.m in Sources */,
 				22B7CE8319B0DD1C0063BAC2 /* TLAppDelegate.m in Sources */,
+				22B7CE8F19B0DD560063BAC2 /* DoWork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +276,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Archive To Storage/Archive To Storage-Prefix.pch";
 				INFOPLIST_FILE = "Archive To Storage/Archive To Storage-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -278,7 +290,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Archive To Storage/Archive To Storage-Prefix.pch";
 				INFOPLIST_FILE = "Archive To Storage/Archive To Storage-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -302,6 +316,7 @@
 				22B7CE8B19B0DD1C0063BAC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
