@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Archive To Storage' target in the 'Archive To Storage' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
